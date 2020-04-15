@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.digitalfrontiers.springboot</groupId>
+    <artifactId>spring-boot-magic-javamagazin</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>mina</artifactId>
+  <packaging>pom</packaging>
+  <name>Mina Spring Boot AutoConfiguration and Starter base pom</name>
+
+  <modules>
+    <module>mina-autoconfigure</module>
+    <module>mina-sshd-spring-boot-starter</module>
+  </modules>
+
+  <properties>
+    <mina.version>2.4.0</mina.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.sshd</groupId>
+        <artifactId>sshd-mina</artifactId>
+        <version>${mina.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

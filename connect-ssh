@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# for every established connection, the host key will be checked and stored.
+# In our example, the host key will be regenerated every time the application is restarted and thus
+# result in errors. To circumvent this, we use the UserKnownHostsFile=/dev/null
+#
+# THIS SHOULD NEVER BE DONE WHEN RUNNING SSH IN PRODUCTION
+ssh admin@localhost -p 8022 -o StrictHostKeyChecking=no -o "UserKnownHostsFile=/dev/null"

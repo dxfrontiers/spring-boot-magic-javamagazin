@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.digitalfrontiers.springboot</groupId>
+    <artifactId>mina</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>mina-sshd-spring-boot-starter</artifactId>
+
+  <dependencies>
+    <!--
+    Mandatory dependency to the spring boot starter. This can be replaced by a more specific
+    starter, if required (like spring-boot-starter-web)
+    -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <!--
+    the autoconfiguration module
+    -->
+    <dependency>
+      <groupId>de.digitalfrontiers.springboot</groupId>
+      <artifactId>mina-autoconfigure</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!--
+    the required dependencies, to allow the intended library to be usable.
+    In our case that is mina sshd
+    -->
+    <dependency>
+      <groupId>org.apache.sshd</groupId>
+      <artifactId>sshd-mina</artifactId>
+      <version>2.4.0</version>
+    </dependency>
+  </dependencies>
+
+</project>
