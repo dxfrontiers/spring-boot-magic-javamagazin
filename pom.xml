@@ -20,6 +20,7 @@
   <modules>
     <module>util</module>
     <module>spring-factories-exploration</module>
+    <module>spring-environment-exploration</module>
     <module>mina</module>
     <module>example</module>
   </modules>
