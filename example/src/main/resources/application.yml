@@ -1,0 +1,12 @@
+mina:
+  sshd:
+    port: 8122
+    host-keys:
+      - classpath:ssh_host_dsa_key
+      - classpath:ssh_host_rsa_key
+    users:
+      - name: admin
+        password: password
+      - name: root
+        password: unsecure
+
