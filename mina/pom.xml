@@ -20,7 +20,7 @@
   </modules>
 
   <properties>
-    <mina.version>2.4.0</mina.version>
+    <mina.version>2.7.0</mina.version>
   </properties>
 
   <dependencyManagement>
